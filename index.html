@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="task-manager">
+    <h1>Tasks Dashboard</h1>
+
+    <!--Search and Filter Section --> 
+    <input type="text" id="searchInput" placeholder="Search tasks...">
+    <select id="priorityFilter">
+      <option value="">All Priorities</option>
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+    </select>
+    <select id="statusFilter">
+      <option value="">All Statuses</option>
+      <option value="upcoming">Upcoming</option>
+      <option value="overdue">Overdue</option>
+      <option value="completed">Completed</option>
+    </select>
+
+    <!-- Add Task Form -->
+    <input type="text" id="titleInput" placeholder="Task Title">
+    <textarea id="descriptionInput" placeholder="Task Description"></textarea>
+    <input type="date" id="dueDateInput">
+    <select id="priorityInput">
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+    </select>
+    <button id="addTaskBtn">Add Task</button>
+
+    <!-- Dashboard Sections -->
+    <h2>Upcoming Tasks</h2>
+    <ul id="upcomingTasks" class="task-list"></ul>
+
+    <h2>Overdue Tasks</h2>
+    <ul id="overdueTasks" class="task-list"></ul>
+
+    <h2>Completed Tasks</h2>
+    <ul id="completedTasks" class="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
